@@ -1,0 +1,8 @@
+.git/
+.vscode/
+
+cmd/
+
+firestore.png
+README.md
+tester.json
