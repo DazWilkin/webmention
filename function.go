@@ -104,6 +104,8 @@ func Webmention(w http.ResponseWriter, r *http.Request) {
 
 	fmt.Fprintln(w, "ok")
 }
+
+// Healthz is a handler that returns the function's health (oK)
 func Healthz(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintln(w, "ok")
 }
