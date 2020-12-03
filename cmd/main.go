@@ -9,12 +9,12 @@ import (
 )
 
 const (
-	PORT string = "8080"
+	port string = "8080"
 )
 
 func main() {
 	http.HandleFunc("/healthz", p.Healthz)
 	http.HandleFunc("/webmention", p.Webmention)
-	log.Printf("Listening [:%s]", PORT)
-	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%s", PORT), nil))
+	log.Printf("Listening [:%s]", port)
+	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%s", port), nil))
 }
