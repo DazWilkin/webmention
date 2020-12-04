@@ -1,7 +1,7 @@
 # webmention
 
 + [![Go Report Card](https://goreportcard.com/badge/github.com/DazWilkin/webmention)](https://goreportcard.com/report/github.com/DazWilkin/webmention)
-+ [![PkgGoDev](https://pkg.go.dev/badge/DazWilkin/webmention)](https://pkg.go.dev/DazWilkin/webmention)
++ [![PkgGoDev](https://pkg.go.dev/badge/DazWilkin/webmention)](https://pkg.go.dev/github.com/DazWilkin/webmention)
 
 ## Example POST
 
