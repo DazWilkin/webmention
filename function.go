@@ -12,7 +12,7 @@ import (
 	"cloud.google.com/go/firestore"
 )
 
-// Obtain ProjectID from the environment (provided by Cloud Functions)
+// Obtain ProjectID from the environment
 var projectID = os.Getenv("GOOGLE_CLOUD_PROJECT")
 
 var client *firestore.Client
@@ -29,7 +29,7 @@ func init() {
 	ctx := context.Background()
 	client, err = firestore.NewClient(ctx, projectID)
 	if err != nil {
-		log.Fatal("firestore.Client: %v", err)
+		log.Fatalf("firestore.Client: %v", err)
 	}
 }
 
