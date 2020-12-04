@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	p "github.com/DazWilkin/webmention"
+	"github.com/DazWilkin/webmention"
 )
 
 const (
@@ -13,8 +13,8 @@ const (
 )
 
 func main() {
-	http.HandleFunc("/healthz", p.Healthz)
-	http.HandleFunc("/webmention", p.Webmention)
+	http.HandleFunc("/healthz", webmention.Healthz)
+	http.HandleFunc("/webmention", webmention.Webmention)
 	log.Printf("Listening [:%s]", port)
 	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%s", port), nil))
 }

@@ -1,4 +1,4 @@
-package p
+package webmention
 
 import (
 	"context"
