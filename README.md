@@ -29,7 +29,7 @@ And then POST something to it:
 
 ```bash
 SOURCE="https://waterpigs.example/post-by-barnaby"
-TARGET="https://pretired.dazwilkin.com/posts/201203"
+TARGET="https://pretired.dazwilkin.com/posts/201203/"
 
 curl \
 --request POST \
@@ -146,7 +146,7 @@ URL=$(\
   --format="value(httpsTrigger.url)")
 
 SOURCE="https://waterpigs.example/post-by-barnaby"
-TARGET="https://pretired.dazwilkin.com/posts/201203"
+TARGET="https://pretired.dazwilkin.com/posts/201203/"
 
 curl \
 --request POST \
